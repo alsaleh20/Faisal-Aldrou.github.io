@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيصل الدروع | مهندس تعلم آلي وذكاء اصطناعي</title>
+    <meta name="description" content="البورتفوليو الشخصي للمهندس فيصل الدروع - متخصص في هندسة التعلم الآلي والذكاء الاصطناعي وتطبيقات الوكيل الذكي">
+    
+    <!-- Google Fonts: Orbitron for futuristic touch, Cairo for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Cyberpunk Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-theme">
+
+    <!-- Cyber Matrix Canvas Background -->
+    <canvas id="matrixCanvas"></canvas>
+    <div class="scanlines"></div>
+
+    <!-- Navigation Header -->
+    <header class="cyber-header">
+        <div class="container nav-container">
+            <a href="#" class="cyber-logo">
+                <span class="glitch" data-text="FAISAL.ML">FAISAL.ML</span>
+            </a>
+            
+            <nav class="cyber-nav" id="cyberNav">
+                <a href="#home" class="cyber-nav-link active"><span class="nav-num">01//</span> الرئيسية</a>
+                <a href="#about" class="cyber-nav-link"><span class="nav-num">02//</span> عن المهندس</a>
+                <a href="#skills" class="cyber-nav-link"><span class="nav-num">03//</span> المصفوفة المهارية</a>
+                <a href="#projects" class="cyber-nav-link"><span class="nav-num">04//</span> المستودع البرمجي</a>
+                <a href="#experience" class="cyber-nav-link"><span class="nav-num">05//</span> السجل المهني</a>
+                <a href="#contact" class="cyber-nav-link"><span class="nav-num">06//</span> الاتصال بالشبكة</a>
+            </nav>
+
+            <div class="cyber-actions">
+                <button class="status-indicator-btn" title="حالة النظام: نشط">
+                    <span class="status-pulse"></span>
+                    <span class="status-text">ONLINE</span>
+                </button>
+                <div class="cyber-menu-btn" id="cyberMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cyber Hero Section -->
+    <section id="home" class="cyber-hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="cyber-badge">
+                    <span class="badge-tag">RANK #2 CLASS</span>
+                    <span class="badge-text">مهندس ذكاء اصطناعي وروبوتات</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="glitch-title" data-text="فيصل الدروع">فيصل الدروع</span> <br>
+                    <span class="terminal-text">> Junior Machine Learning Engineer</span>
+                </h1>
+                
+                <p class="hero-desc">
+                    خريج هندسة الذكاء الاصطناعي والأنظمة الروبوتية لعام 2024 بتقدير ممتاز وترتيب الثاني على الدفعة (83.3%). متخصص في بناء نماذج التعلم الآلي والعميق، وتطبيقات الوكلاء الذكياء (Agentic AI) وتطوير الأنظمة الوسيطة للتواصل المتعدد مع النماذج اللغوية (Multi-Provider Models).
+                </p>
+
+                <div class="cyber-buttons">
+                    <a href="#projects" class="cyber-btn cyber-btn-primary">
+                        <span class="btn-slice"></span>
+                        <span class="btn-text"><i class="fas fa-terminal"></i> استكشاف المشاريع</span>
+                    </a>
+                    <a href="Faisal_Ahmad_Yousef_Aldrou_CV.pdf" target="_blank" class="cyber-btn cyber-btn-secondary">
+                        <span class="btn-slice"></span>
+                        <span class="btn-text"><i class="fas fa-file-code"></i> ملف السيرة الذاتية (PDF)</span>
+                    </a>
+                </div>
+
+                <div class="cyber-socials">
+                    <a href="mailto:faisaldrcu12327@gmail.com" class="social-icon" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+962780543997" class="social-icon" title="اتصال مباشر"><i class="fas fa-phone"></i></a>
+                    <a href="https://linkedin.com/in/faisalaldrou" target="_blank" class="social-icon" title="لينكد إن"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Faisal-Aldrou" target="_blank" class="social-icon" title="جيت هاب"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Interactive Terminal Emulator: Cyberpunk Interactive CLI -->
+            <div class="terminal-container" id="mainTerminalWindow">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-title">faisal_system@interactive_cli: ~</div>
+                </div>
+                <div class="terminal-body" id="cliBody">
+                    <div class="terminal-line"><span class="prompt">$</span> system_init</div>
+                    <div class="terminal-output text-cyan">[SYSTEM SUCCESS] تم تفعيل نظام الاتصال التفاعلي بنجاح.</div>
+                    <div class="terminal-output">اكتب <span style="color: var(--cyber-neon-pink); font-weight: bold;">help</span> لمعرفة الأوامر المتاحة واستكشاف النظام.</div>
+                    
+                    <div id="cliHistory"></div>
+                    
+                    <div class="input-line">
+                        <span class="prompt">$</span>
+                        <input type="text" id="cliInput" class="terminal-input-field" autocomplete="off" autofocus>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="cyber-section">
+        <div class="container">
+            <div class="cyber-section-header">
+                <h2 class="cyber-title" data-text="02// عن المهندس">02// عن المهندس</h2>
+                <div class="cyber-bar"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-stat-card">
+                    <div class="stat-num">83.3%</div>
+                    <div class="stat-label">المعدل الجامعي الإجمالي</div>
+                </div>
+                <div class="about-stat-card">
+                    <div class="stat-num">#2</div>
+                    <div class="stat-label">الترتيب الأكاديمي على الدفعة</div>
+                </div>
+                <div class="about-stat-card">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">لغات برمجة أساسية (Python, C++, SQL)</div>
+                </div>
+            </div>
+
+            <div class="about-text-box">
+                <h3>ملخص الملف الشخصي المهني</h3>
+                <p>
+                    مهندس ذكاء اصطناعي وأنظمة روبوتية أمتلك خبرة عملية في تطوير نماذج التعلم الآلي وهندسة البيانات وحلول التعلم العميق باستخدام لغة Python وأطر عمل الذكاء الاصطناعي الحديثة. أتميز بالقدرة على تقديم حلول الذكاء الاصطناعي القائمة على معالجة وهندسة البيانات لزيادة الكفاءة التشغيلية واتخاذ قرارات ذكية ومدعومة رياضياً.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="cyber-section">
+        <div class="container">
+            <div class="cyber-section-header">
+                <h2 class="cyber-title" data-text="03// مصفوفة المهارات التقنية">03// مصفوفة المهارات التقنية</h2>
+                <div class="cyber-bar"></div>
+            </div>
+
+            <div class="cyber-skills-grid">
+                <!-- Skill box 1 -->
+                <div class="skills-card">
+                    <div class="skills-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>الذكاء الاصطناعي التوليدي والتعلم الآلي</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li>Machine Learning & Deep Learning</li>
+                        <li>LangChain (LCEL) & Pydantic v2</li>
+                        <li>RAG & Agentic AI (تحت التطوير)</li>
+                        <li>Multi-Provider Model Routing</li>
+                        <li>Predictive Modeling & Neural Networks</li>
+                    </ul>
+                </div>
+
+                <!-- Skill box 2 -->
+                <div class="skills-card">
+                    <div class="skills-card-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3>أطر العمل والمكتبات التقنية</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li>TensorFlow / Keras / Scikit-learn</li>
+                        <li>XGBoost / LightGBM / CatBoost</li>
+                        <li>Optuna (ضبط المعاملات الفائقة)</li>
+                        <li>Pandas / NumPy / Apache Parquet</li>
+                        <li>JSON Output Parsing</li>
+                    </ul>
+                </div>
+
+                <!-- Skill box 3 -->
+                <div class="skills-card">
+                    <div class="skills-card-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>الويب، المعمارية والبرمجة</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li>Python Flask / RESTful API Design</li>
+                        <li>Middleware Architecture & Failover Pipelines</li>
+                        <li>Python, SQL, C++, C (Arduino)</li>
+                        <li>Kotlin & JavaScript (Fetch API / Async)</li>
+                        <li>Git / Linux Bash / Secret Isolation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="cyber-section">
+        <div class="container">
+            <div class="cyber-section-header">
+                <h2 class="cyber-title" data-text="04// المستودع البرمجي والمشاريع">04// المستودع البرمجي والمشاريع</h2>
+                <div class="cyber-bar"></div>
+            </div>
+
+            <div class="projects-matrix" id="githubProjectsGrid">
+                <!-- Fallback Projects (Will be replaced dynamically by real GitHub Repos, or kept if offline) -->
+                <div class="cyber-project-card">
+                    <div class="proj-header">
+                        <span class="proj-tech">Flask / LangChain / Pydantic</span>
+                        <div class="status-tag">DEPLOYED</div>
+                    </div>
+                    <h3>تطبيق الدعم الذكي متعدد المزودين (Multi-Provider GenAI)</h3>
+                    <p>
+                        بناء وتصميم واجهة وسيطة (Middleware Interface) تقوم بفرز واستدعاء النماذج اللغوية عبر مزودين متعددين (Google Gemini, Meta Llama). الكود يعتمد على JSON مقيد تماماً بالـ Pydantic وهياكل LangChain JsonOutputParser لمنع حدوث أخطاء استهلاك البيانات في الخلفية، بالإضافة إلى بناء خطط حماية (Fallback Pipelines) للتعامل مع قيود الخدمة وتتبع زمن الاستجابة (Latency) في الوقت الفعلي.
+                    </p>
+                </div>
+
+                <div class="cyber-project-card">
+                    <div class="proj-header">
+                        <span class="proj-tech">LightGBM / CatBoost / Optuna</span>
+                        <div class="status-tag">FORECASTING</div>
+                    </div>
+                    <h3>خط أنابيب التنبؤ بالحرارة الموسمية (Seasonal Temperature Forecasting)</h3>
+                    <p>
+                        تطوير نموذج تنبؤ مبني على خوارزميات التعلم الآلي المتطورة للتنبؤ بدرجات الحرارة المستقبلية، مع استخدام أداة Optuna لضبط المعاملات الفوقية (Hyperparameters Optimization) وتحديد الأنماط المناخية بناءً على البيانات التاريخية لتعزيز الدقة الإحصائية لنتائج التنبؤ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience" class="cyber-section">
+        <div class="container">
+            <div class="cyber-section-header">
+                <h2 class="cyber-title" data-text="05// سجل الخبرات والتعليم">05// سجل الخبرات والتعليم</h2>
+                <div class="cyber-bar"></div>
+            </div>
+
+            <div class="cyber-timeline">
+                <!-- Timeline Card 1 -->
+                <div class="cyber-timeline-item">
+                    <div class="cy-timeline-indicator"></div>
+                    <div class="cy-timeline-meta">خبرة تدريسية وتدريبية</div>
+                    <div class="cy-timeline-content">
+                        <h3>مدرس علوم حاسوب وروبوتات</h3>
+                        <span class="timeline-company">مدرسة النموذج للتربية الخاصة | عمان، الأردن</span>
+                        <p>
+                            تقديم تدريب عملي للطلاب في مجالات تكنولوجيا الروبوتات والبرمجة، وابتكار وسائل تعليمية مبسطة لشرح المفاهيم البرمجية والمنطق الحوسبي لحل المشكلات بطرق عملية تفاعلية.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Card 2 -->
+                <div class="cyber-timeline-item">
+                    <div class="cy-timeline-indicator"></div>
+                    <div class="cy-timeline-meta">مسار التعليم الأكاديمي</div>
+                    <div class="cy-timeline-content">
+                        <h3>بكالوريوس هندسة الذكاء الاصطناعي والروبوتات</h3>
+                        <span class="timeline-company">خريج عام 2024 | الترتيب الأكاديمي: الثاني على الدفعة</span>
+                        <p>
+                            دراسة وتطبيق الأسس الرياضية والبرمجية لهندسة الأنظمة الذكية، ميكانيكا وتوجيه الروبوتات، هندسة نظم التحكم، ومعالجة البيانات بمعدل تراكمي 83.3%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Card 3 -->
+                <div class="cyber-timeline-item">
+                    <div class="cy-timeline-indicator"></div>
+                    <div class="cy-timeline-meta">الشهادات والتدريب المستمر</div>
+                    <div class="cy-timeline-content">
+                        <h3>الشهادات والبرامج التدريبية المكتملة</h3>
+                        <span class="timeline-company">عالمي ومحلي</span>
+                        <ul class="timeline-bullets">
+                            <li>شهادة محترف RAG والذكاء الاصطناعي الوكيل من IBM & Coursera (قيد الإتمام حالياً).</li>
+                            <li>برنامج تدريب عملي علم البيانات والذكاء الاصطناعي مع SHAI للذكاء الاصطناعي.</li>
+                            <li>برنامج التدريب العملي التطبيقي مع Infotel.</li>
+                            <li>دورة الذكاء الاصطناعي والتعلم الآلي في التطبيقات الطبية من معهد The Hope International.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cyber Contact Section -->
+    <section id="contact" class="cyber-section">
+        <div class="container">
+            <div class="cyber-section-header">
+                <h2 class="cyber-title" data-text="06// الاتصال بالشبكة وتوتساب">06// الاتصال بالشبكة وتوتساب</h2>
+                <div class="cyber-bar"></div>
+            </div>
+
+            <div class="cyber-contact-grid">
+                <div class="cyber-terminal-info">
+                    <h3>بيانات خادم الاتصال</h3>
+                    <p>قم بالاتصال المباشر عبر البوابات الرسمية للمهندس فيصل لمناقشة المشاريع وهندسة النظم الذكية.</p>
+                    
+                    <div class="terminal-stat-item">
+                        <span class="stat-prefix">> EMAIL:</span>
+                        <a href="mailto:faisaldrcu12327@gmail.com" class="stat-val">faisaldrcu12327@gmail.com</a>
+                    </div>
+                    <div class="terminal-stat-item">
+                        <span class="stat-prefix">> PHONE:</span>
+                        <a href="tel:+962780543997" class="stat-val" dir="ltr">+962 780543997</a>
+                    </div>
+                    <div class="terminal-stat-item">
+                        <span class="stat-prefix">> TARGET:</span>
+                        <span class="stat-val">Amman, Jordan</span>
+                    </div>
+                </div>
+
+                <div class="cyber-form-container">
+                    <form id="cyberContactForm" class="cyber-form">
+                        <div class="cyber-form-group">
+                            <label for="cName">> الاسم الكامل</label>
+                            <input type="text" id="cName" required placeholder="أدخل اسم جهة الاتصال">
+                        </div>
+                        <div class="cyber-form-group">
+                            <label for="cEmail">> بريدك الإلكتروني</label>
+                            <input type="email" id="cEmail" required placeholder="name@domain.com">
+                        </div>
+                        <div class="cyber-form-group">
+                            <label for="cSubject">> موضوع الاتصال</label>
+                            <input type="text" id="cSubject" required placeholder="الهدف من الاتصال">
+                        </div>
+                        <div class="cyber-form-group">
+                            <label for="cMessage">> نص الرسالة للواتساب</label>
+                            <textarea id="cMessage" rows="4" required placeholder="اكتب تفاصيل طلبك ليتم إرساله للواتساب..."></textarea>
+                        </div>
+                        <button type="submit" class="cyber-form-btn">
+                            <span class="btn-slice"></span>
+                            <span class="btn-text">بدء تشغيل نفق الإرسال (واتساب)</span>
+                        </button>
+                    </form>
+                    <div id="cyberFormStatus" class="cyber-form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container footer-flex">
+            <p>// نظام بورتفوليو فيصل الدروع البرمجي. جميع الحقوق محفوظة 2026. Powered by <a href="https://alsaleh20.github.io/" target="_blank" style="color: var(--cyber-neon-cyan); text-decoration: none; font-weight: bold;">alsaleh20</a> //</p>
+            <div class="footer-terminal-links">
+                <a href="https://github.com/Faisal-Aldrou" target="_blank">// GITHUB</a>
+                <a href="https://linkedin.com/in/faisalaldrou" target="_blank">// LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

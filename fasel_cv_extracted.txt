@@ -1,0 +1,83 @@
+=== Extracting Faisal_Ahmad_Yousef_Aldrou_CV.pdf ===
+--- Page 1 ---
+FAISAL AHMED YOUSIF AL-DROU
+Junior Machine Learning Engineer
+Phone Number: +962780543997 |  Email: faisaldrcu12327@gmail.com |  Address: Amman, Jordan
+LinkedIn: linkedin.com/in/faisalaldrou |  Github: github.com/Faisal-Aldrou 
+PROFESSIONAL SUMMARY
+Artificial Intelligence and Robotics Engineer with practical experience in developing machine learning models, data
+processing pipelines, and deep learning solutions using Python and modern AI frameworks. Experienced in applied AI
+projects including forecasting, data analysis, and image classification, with additional experience in computer science and
+robotics training. Ranked 2nd academically, with the ability to deliver data-driven AI solutions that enhance operational
+efficiency and support smarter decision-making for the organization. 
+TECHNICAL SKILLS
+Artificial Intelligence & Generative
+AI:
+Machine Learning, Deep Learning, Neural Networks, LangChain Expression Language
+(LCEL), Multi-Provider Model Routing, Prompt Engineering, Predictive Modeling, RAG
+& Agentic AI (In Progress)
+AI Frameworks & Libraries: LangChain, Pydantic v2, TensorFlow, Keras, Scikit-learn, XGBoost, LightGBM,
+CatBoost, Optuna
+Data Science & Output Parsing:Pandas, NumPy, JSON Output Parsing, Feature Engineering, Data Preprocessing,
+Data Transformation, Data Analysis, Apache Parquet
+Web & Middleware Architecture:Python (Flask), RESTful API Design, Middleware Architecture, Error Handling &
+Fallback Pipelines, Latency Tracking & Benchmarking
+Programming Languages: Python, SQL, C++, JavaScript (Fetch API / Async), Kotlin, Arduino C
+Development Tools & Security:Git, Linux, Bash, Ubuntu Command Line, Environment Variable Management (python-
+dotenv), Secret Isolation
+PROFESSIONAL EXPERIENCE
+Computer Science & Robotics Instructor Amman, Jordan
+Al-Namothaj School for Special Education
+Delivered practical training in computer science and robotics, enabling students to understand programming concepts
+through hands-on activities.
+Developed  simplified  learning  materials  for  complex  technical  concepts,  improving  students'  understanding  and
+application of programming skills.
+Designed interactive technical activities that enhanced students' problem-solving abilities and computational thinking
+skills.
+TECHNICAL PROJECTS
+• Multi-Provider GenAI Support Application
+Technologies: Python (Flask), LangChain (LCEL), Pydantic v2, REST API, Google Gemini, Meta Llama, JavaScript
+Engineered a multi-provider AI support application featuring a unified middleware interface that abstracts model execution
+across Google Gemini and Meta Llama.
+Implemented deterministic JSON parsing using Pydantic schemas and LangChain's JsonOutputParser to enforce
+structured output data for backend consumption.
+Built defensive error-handling logic and fallback pipelines to manage API rate limits and prevent server crashes during
+service degradation.
+Integrated asynchronous JavaScript Fetch API for non-blocking UI operations and implemented real-time latency
+tracking across model providers.
+• Seasonal Temperature Forecasting Pipeline
+Technologies: Python, LightGBM, CatBoost, XGBoost, Optuna, Scikit-learn
+Developed a machine learning model for seasonal temperature forecasting, enabling analysis of climate patterns and
+generating data-driven future predictions.
+• 
+• 
+• 
+• 
+• 
+--- Page 2 ---
+• New York City Collision Data ETL Pipeline
+Technologies: Python, Pandas, NumPy, JSON, Apache Parquet
+Built a data processing pipeline to clean, transform, and organize large-scale collision datasets, improving data quality
+and preparing it for analysis and insight extraction.
+• Binary Image Classification Using Convolutional Neural Networks (CNN)
+Technologies: Python, TensorFlow, Keras, NumPy, Matplotlib
+Developed a deep learning model for automated image classification, enabling pattern recognition through convolutional
+neural network techniques.
+EDUCATION
+Artificial Intelligence and Robotics Engineering Graduation Date: 2024
+GPA: 83.3% | Academic Rank: Ranked 2nd in class
+TECHNICAL TRAINING & CERTIFICATIONS
+IBM RAG and Agentic AI Professional Certificate (In Progress) – Coursera / IBM 
+Completed: "Develop Generative AI Applications: Get Started" (LangChain, LCEL, Pydantic, Flask)
+Data Science and Artificial Intelligence Training – SHAI for AI
+Practical Training Program – Infotel
+Artificial Intelligence and Machine Learning in Medical Applications – Course The Hope International
+Python for Machine Learning Certificate – Pro Vision
+LANGUAGES
+Arabic: Native English: Advanced Japanese: Intermediate
+▪ 
+◦ 
+▪ 
+▪ 
+▪ 
+▪ 
